@@ -14,7 +14,10 @@ def database_connection():
             password=PASSWORD,
             database=DATABASE
             )
-        return connection
+        print("Connexion base de données réussi")
+        return connection        
     except Exception as ex:
         messagebox.showerror("Erreur",f"Une erreur est survenue avec la base de donnes: {str(ex.args)}")
         print(f"Erreur depuis la base de données {str(ex)} ")
+#Test
+# database_connection()
